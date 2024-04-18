@@ -108,7 +108,6 @@
         elem.classList = "symbol";
         elem.textContent = symbol;
         elem.addEventListener("click", () => {
-          const symbol = elem.textContent;
           navigator.clipboard.writeText(symbol);
 
           elem.textContent = "Copied!";
